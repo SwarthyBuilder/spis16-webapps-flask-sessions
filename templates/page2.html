@@ -3,11 +3,16 @@
 {% block title %}Page 2: Ask for your favorite color{% endblock %}
 
 {% block content %}
-  <h1>Page 2: Ask for favorite color</h1>
+  <h1>which dessert?</h1>
 
  <form action={{ url_for("renderPage3") }} method="POST">
   Favorite Color:<br>
   <input type="text" name="favoriteColor">
+  <input type="submit" value="Submit">
+    <input type="radio" id="ice cream" name="dessert" value="ice cream">
+  <label for="ice cream">ice cream</label><br>
+  <input type="radio" id="cookies" name="dessert" value="cookies">
+  <label for="cookies">cookies</label><br>
   <input type="submit" value="Submit">
  </form> 
 
