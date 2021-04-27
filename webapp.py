@@ -28,8 +28,8 @@ def renderPage1():
 
 @app.route('/page_2',methods=['GET','POST'])
 def renderPage2():
-    session["firstName"]=request.form['firstName']
-    session["lastName"]=request.form['lastName']
+    session["pet"]=request.form['pets']
+
     return render_template('page2.html')
 
 @app.route('/page3',methods=['GET','POST'])
